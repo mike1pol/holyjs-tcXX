@@ -1,25 +1,19 @@
-# ECMAScript proposal: <Name>
+# ECMAScript proposal: @Name
+- [Motivation](#motivation)
+- [High-level API](#high-level-api)
+- [FAQ](#faq)
 
-# Motivation
+## Motivation
 
-<Proposal motivation>
-
-## Proposed solution
-
-<Solution>
-
-```js
-// Solution example code
-```
+Proposal motivation
 
 ## High-level API
 
 ```js
-// API examples
+// example code
 ```
 
 ### FAQ
-
 #### Question
 
 Answer
