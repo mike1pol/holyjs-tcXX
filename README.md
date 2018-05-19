@@ -5,16 +5,14 @@
 
 ## Motivation
 
-Proposal motivation
+Immutable
 
-## High-level API
+You can create immutable objects to be sure that the properties of the object will not be overwritten.
+
+Exmample:
 
 ```js
-Object.observe(cb);
-
-<!-- examle -->
-
-var obj = {
+const obj = {
 	a: 2,
 	b: [],
 	c: {
@@ -22,14 +20,18 @@ var obj = {
 	}
 };
 
-obj.observe((property, nextValue, oldValue) => {
-	console.log(property, nextValue, oldValue);
-});
+const immutableObject = new Immutable(obj);
 
-obj.a = 3; // 'a', 3, 2
-obj.b = [1,2,3]; // 'b', [1,2,3], []
-obj.c.prop1 = 'newPropValue' // 'c', { prop1: 'newPropValue', 'oldPropValue' } 
+obj.a = 3; // Uncaught TypeError: Properties of the Immutable object will not be overwritten.
+obj.b = [1,2,3]; // Uncaught TypeError: Properties of the Immutable object will not be overwritten.
+obj.c.prop1 = 'newPropValue' // Uncaught TypeError: Properties of the Immutable object will not be overwritten.
 
+```
+
+## High-level API
+
+```
+Immutable([object])
 ```
 
 ### FAQ
