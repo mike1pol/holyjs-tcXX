@@ -10,7 +10,7 @@ Proposal motivation
 ## High-level API
 
 ```js
-// example code
+Object.observe();
 ```
 
 ### FAQ
