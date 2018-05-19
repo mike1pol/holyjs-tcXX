@@ -1,4 +1,4 @@
-# ECMAScript proposal: @Name
+# ECMAScript proposal: Immutable
 - [Motivation](#motivation)
 - [Example](#example)
 - [High-level API](#high-level-api)
