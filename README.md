@@ -32,7 +32,7 @@ obj.c.prop1 = 'newPropValue' // Uncaught TypeError: Properties of the Immutable 
 ## High-level API
 
 ```js
-const immutableObject = new Immutable([object])
+const immutableObject = new Immutable([Object])
 ```
 
 ### FAQ
