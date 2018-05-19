@@ -1,4 +1,4 @@
-# ECMAScript proposal: Immutable
+# ECMAScript proposal: Immutable type
 - [Motivation](#motivation)
 - [Example](#example)
 - [High-level API](#high-level-api)
