@@ -1,5 +1,6 @@
 # ECMAScript proposal: @Name
 - [Motivation](#motivation)
+- [Example](#example)
 - [High-level API](#high-level-api)
 - [FAQ](#faq)
 
@@ -9,7 +10,7 @@ Immutable
 
 You can create immutable objects to be sure that the properties of the object will not be overwritten.
 
-Exmample:
+## Example 
 
 ```js
 const obj = {
@@ -30,8 +31,8 @@ obj.c.prop1 = 'newPropValue' // Uncaught TypeError: Properties of the Immutable 
 
 ## High-level API
 
-```
-Immutable([object])
+```js
+const immutableObject = new Immutable([object])
 ```
 
 ### FAQ
