@@ -1,4 +1,4 @@
-# ECMAScript proposal: @Name
+# ECMAScript proposal: __scope
 - [Motivation](#motivation)
 - [High-level API](#high-level-api)
 - [FAQ](#faq)
