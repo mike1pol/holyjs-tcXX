@@ -79,6 +79,8 @@ var someFunction = () => {
 #### For What?
 
 -- transferring current local scope somewhere else
+
 -- applying current  local scope somewhere else
+
 -- testing
 
