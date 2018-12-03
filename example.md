@@ -1,25 +1,35 @@
-# ECMAScript proposal: Add 🐈(cat) prefix to functions
+# ECMAScript proposal: Support union of "types" by `|` operator
+
 - [Motivation](#motivation)
 - [High-level API](#high-level-api)
 - [FAQ](#faq)
 
 ## Motivation
 
-Functions or methods, marked with 🐈 do not throw exceptions. In in case of error - 🐈 will be throw.
+i current world
+
 ```js
-function 🐈myFunction() {
+if (a instanceof UnknownError || a instanceof UnexpectedError) {
 }
 ```
+
 ## High-level API
 
-```js
-function 🐈myFunction() {
-  throw new Error('bad request');
-}
-try {
-  myFunction();
-} catch (err) {
-  console.error(err); // 🐈
-}
+Example 1:
 
+```js
+if (a instanceof UnknownError|UnexpectedError) {
+}
+```
+
+Example 2:
+
+If https://github.com/mike1pol/holyjs-tcXX/pull/7 will be accepted (syntax ver 2), we can do
+
+```
+try {
+   doStuff();
+} catch (e instaceof UnknownError|UnexpectedError) {
+
+}
 ```
